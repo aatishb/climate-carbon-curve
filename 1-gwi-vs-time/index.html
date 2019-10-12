@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Global Warming Index</title>
+
+  <script src="../libraries/vue.js"></script>
+  <script src="../libraries/plotly.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+  <div id="root" class="container">
+
+    <div id="title" style="padding-bottom: 0px; margin-bottom: 0px;">
+      <h1>The Global Warming Index</h1>
+    </div>
+
+    <graph :traces="[gwi]" :layout="layout"></graph>
+
+    <br>
+    <p>This graphs shows the <a href="http://www.globalwarmingindex.org/">Global Warming Index</a> plotted versus time.</p>
+
+  </div>
+
+  <!-- page code -->
+  <script src="vue-definitions.js"></script>
+
+</body>
+</html>
